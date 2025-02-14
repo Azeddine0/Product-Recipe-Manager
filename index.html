@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Recipe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchBar"
+          placeholder="Search for a product..." />
+        <span class="search-icon">&#128269;</span>
+      </div>
+    </nav>
+    <nav>
+      <div class="search-container">
+        <input
+          type="text"
+          id="categorySearchBar"
+          placeholder="Search by category..." />
+        <span class="search-icon">&#128269;</span>
+      </div>
+    </nav>
+
+    <div class="category-filter">
+      <label for="category">Select Category:</label>
+      <select id="category" onchange="filterItems()">
+        <option value="">All</option>
+        <option value="fruit">Fruit</option>
+        <option value="vegetable">Vegetable</option>
+      </select>
+    </div>
+
+    <div class="container">
+      <div class="products-section">
+        <h2>Products</h2>
+        <table id="productsTable">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Color</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Products will be dynamically loaded here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="recipe-section">
+        <h2>Recipe</h2>
+        <button id="printRecipe">Print Recipe</button>
+        <button id="clearRecipe">Clear Recipe</button>
+        <p id="recipeTotal">Total Price: $0.00</p>
+        <table id="recipeTable">
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Color</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Recipe items will be added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Print Confirmation Modal -->
+    <div id="printModal" class="modal">
+      <div class="modal-content">
+        <p>Are you sure you want to print the recipe?</p>
+        <button id="confirmPrint">Yes, Print</button>
+        <button id="cancelPrint">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="spinner"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

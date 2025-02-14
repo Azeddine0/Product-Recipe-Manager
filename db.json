@@ -1,0 +1,42 @@
+[
+  {
+    "code": 101,
+    "name": "Apple",
+    "quantity": 10,
+    "color": "Red",
+    "category": "Fruit",
+    "price": 1.2
+  },
+  {
+    "code": 102,
+    "name": "Banana",
+    "quantity": 15,
+    "color": "Yellow",
+    "category": "Fruit",
+    "price": 0.5
+  },
+  {
+    "code": 103,
+    "name": "Grapes",
+    "quantity": 20,
+    "color": "Green",
+    "category": "Fruit",
+    "price": 2.0
+  },
+  {
+    "code": 201,
+    "name": "Carrot",
+    "quantity": 8,
+    "color": "Orange",
+    "category": "Vegetable",
+    "price": 0.8
+  },
+  {
+    "code": 202,
+    "name": "Tomato",
+    "quantity": 12,
+    "color": "Red",
+    "category": "Vegetable",
+    "price": 1.1
+  }
+]

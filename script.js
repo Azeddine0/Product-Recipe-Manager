@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
           product.category.toLowerCase() === selectedCategory.toLowerCase()
       );
     } else {
-      filteredProducts = products; // Show all if no category selected
+      filteredProducts = products;
     }
     displayProducts(filteredProducts);
   });
